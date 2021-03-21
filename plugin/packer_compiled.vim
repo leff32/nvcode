@@ -48,6 +48,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
+  ["hop.nvim"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/hop.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
@@ -88,6 +92,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/nvim-dap"
   },
+  ["nvim-jqx"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/nvim-jqx"
+  },
   ["nvim-lightbulb"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/nvim-lightbulb"
@@ -111,6 +119,10 @@ _G.packer_plugins = {
   ["nvim-treesitter-refactor"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/nvim-treesitter-refactor"
+  },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -160,6 +172,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-fugitive"
   },
+  ["vim-polyglot"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-polyglot"
+  },
   ["vim-rhubarb"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
@@ -179,6 +195,14 @@ _G.packer_plugins = {
   ["vim-which-key"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-which-key"
+  },
+  ["vscode-es7-javascript-react-snippets"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vscode-es7-javascript-react-snippets"
+  },
+  ["vscode-javascript"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vscode-javascript"
   }
 }
 

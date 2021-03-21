@@ -1,3 +1,9 @@
+--     _       _ __    __
+--    (_)___  (_) /_  / /_  ______ _
+--   / / __ \/ / __/ / / / / / __ `/
+--  / / / / / / /__ / / /_/ / /_/ /
+-- /_/_/ /_/_/\__(_)_/\__,_/\__,_/
+
 -- General mappings
 require('plugins')
 require('keymappings')
@@ -19,6 +25,8 @@ require('nv-comment')
 require('nv-telescope')
 require('nv-rnvimr')
 require('nv-neogit')
+require('nv-hop')
+require('nv-gitblame')
 
 -- Which Key (Hope to replace with Lua plugin someday)
 vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')
