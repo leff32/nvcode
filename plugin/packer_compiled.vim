@@ -40,6 +40,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
+  ["git-blame.nvim"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/git-blame.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
@@ -51,6 +55,10 @@ _G.packer_plugins = {
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/lspsaga.nvim"
+  },
+  neogit = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/neogit"
   },
   ["nvcode-color-schemes.vim"] = {
     loaded = true,
@@ -148,6 +156,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-floaterm"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+  },
+  ["vim-rhubarb"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
+  },
   ["vim-rooter"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-rooter"
@@ -159,6 +175,10 @@ _G.packer_plugins = {
   ["vim-vsnip"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  ["vim-which-key"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-which-key"
   }
 }
 

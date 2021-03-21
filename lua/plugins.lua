@@ -62,7 +62,11 @@ return require('packer').startup(function(use)
   use 'nvim-telescope/telescope-media-files.nvim'
 
   -- Git
+  use 'TimUntersberger/neogit'
   use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
+  use 'f-person/git-blame.nvim'
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-rhubarb'
 
   -- General Plugins
   use 'windwp/nvim-autopairs'
@@ -73,5 +77,6 @@ return require('packer').startup(function(use)
   use 'terrortylor/nvim-comment'
   use 'kevinhwang91/rnvimr'
   use 'voldikss/vim-floaterm'
+  use 'liuchengxu/vim-which-key'
 
 end)

@@ -18,6 +18,11 @@ require('nv-startify')
 require('nv-comment')
 require('nv-telescope')
 require('nv-rnvimr')
+require('nv-neogit')
+
+-- Which Key (Hope to replace with Lua plugin someday)
+vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')
+vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
 
 -- LSP
 require('lsp')
