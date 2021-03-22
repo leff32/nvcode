@@ -1,7 +1,9 @@
 vim.g.startify_custom_header = {
-    '        _   __         _    ___          ', '       / | / /__  ____| |  / (_)___ ___  ',
-    '      /  |/ / _ \\/ __ \\ | / / / __ `__ \\ ', '     / /|  /  __/ /_/ / |/ / / / / / / / ',
-    '    /_/ |_/\\___/\\____/|___/_/_/ /_/ /_/  '
+    '   _____   __          ___    ______           _________     _________     ',
+    '   ___  | / /____________ |  / /__(_)______ _____  ____/___________  /____ ',
+    '   __   |/ /_  _ \\  __ \\_ | / /__  /__  __ `__ \\  /    _  __ \\  __  /_  _ \\',
+    '   _  /|  / /  __/ /_/ /_ |/ / _  / _  / / / / / /___  / /_/ / /_/ / /  __/',
+    '   /_/ |_/  \\___/\\____/_____/  /_/  /_/ /_/ /_/\\____/  \\____/\\__,_/  \\___/ '
 }
 
 vim.g.webdevicons_enable_startify = 1
@@ -18,7 +20,7 @@ vim.api.nvim_exec(
     true)
 
 vim.api.nvim_exec(
-    'let startify_bookmarks = [ { \'a\': \'~/.config/alacritty/alacritty.yml\' }, { \'i\': \'~/.config/nvim/init.lua\' }, { \'z\': \'~/.zshrc\' }]',
+    'let startify_bookmarks = [ { \'a\': \'~/.config/alacritty/alacritty.yml\' }, { \'i\': \'~/.config/nvim/init.lua\' }, { \'r\': \'~/.config/ranger/rc.conf\' }, { \'z\': \'~/.zshrc\' }]',
     true)
 
 vim.cmd([[

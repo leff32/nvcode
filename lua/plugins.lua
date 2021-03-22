@@ -24,7 +24,6 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-tree.lua'
 
     -- Color
-    use 'christianchiarulli/nvcode-color-schemes.vim'
     use 'norcalli/nvim-colorizer.lua'
 
     -- LSP
@@ -83,7 +82,7 @@ return require('packer').startup(function(use)
     use 'kevinhwang91/rnvimr'
     use 'voldikss/vim-floaterm'
     use 'liuchengxu/vim-which-key'
-	use 'sheerun/vim-polyglot'
-	use 'phaazon/hop.nvim'
+    use 'sheerun/vim-polyglot'
+    use 'phaazon/hop.nvim'
 
 end)

@@ -1,8 +1,8 @@
---     _       _ __    __
---    (_)___  (_) /_  / /_  ______ _
---   / / __ \/ / __/ / / / / / __ `/
---  / / / / / / /__ / / /_/ / /_/ /
--- /_/_/ /_/_/\__(_)_/\__,_/\__,_/
+-- _____       __________ ______
+-- ___(_)_________(_)_  /____  /___  _______ _
+-- __  /__  __ \_  /_  __/__  /_  / / /  __ `/
+-- _  / _  / / /  / / /____  / / /_/ // /_/ /
+-- /_/  /_/ /_//_/  \__/(_)_/  \__,_/ \__,_/
 
 -- General mappings
 require('plugins')
@@ -27,6 +27,7 @@ require('nv-rnvimr')
 require('nv-neogit')
 require('nv-hop')
 require('nv-gitblame')
+require('nv-quickscope')
 
 -- Which Key (Hope to replace with Lua plugin someday)
 vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')
@@ -44,3 +45,6 @@ require('lsp.lua-ls')
 require('lsp.python-ls')
 require('lsp.vim-ls')
 require('lsp.yaml-ls')
+
+-- OneDarkPro (mod. by leff32)
+vim.cmd('source ~/.config/nvim/colors/onedarkpro.vim')

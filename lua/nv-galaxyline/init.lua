@@ -1,28 +1,28 @@
 local gl = require('galaxyline')
--- get my theme in galaxyline repo
--- local colors = require('galaxyline.theme').default
+
+local condition = require('galaxyline.condition')
+local gls = gl.section
+gl.short_line_list = {'NvimTree', 'vista', 'dbui', 'packer', 'startify'}
 
 local colors = {
-    bg = '#2E2E2E',
+    bg = '#1E2127',
     yellow = '#DCDCAA',
 	dark_yellow = '#D7BA7D',
     cyan = '#4EC9B0',
-    green = '#608B4E',
+    green = '#DFF55A',
     light_green = '#B5CEA8',
     string_orange = '#CE9178',
     orange = '#FF8800',
     purple = '#C586C0',
     magenta = '#D16D9E',
-    grey = '#858585',
+    grey = '#ABB2BF',
+    dark_grey = '#5C6370',
     blue = '#569CD6',
     vivid_blue = '#4FC1FF',
 	light_blue = '#9CDCFE',
     red = '#D16969',
 	error_red = '#F44747'
 }
-local condition = require('galaxyline.condition')
-local gls = gl.section
-gl.short_line_list = {'NvimTree', 'vista', 'dbui', 'packer', 'startify'}
 
 gls.left[1] = {
     ViMode = {
@@ -56,8 +56,6 @@ gls.left[1] = {
         highlight = {colors.red, colors.bg, 'bold'}
     }
 }
-print(vim.fn.getbufvar(0,'ts'))
-vim.fn.getbufvar(0,'ts')
 
 gls.left[2] = {
     GitIcon = {
@@ -75,13 +73,21 @@ gls.left[3] = {
     GitBranch = {
         provider = 'GitBranch',
         condition = condition.check_git_workspace,
-        separator = ' ',
-        separator_highlight = {'NONE', colors.bg},
+        separator = ' ▎ ',
+        separator_highlight = {colors.dark_grey, colors.bg},
         highlight = {colors.grey, colors.bg, 'bold'}
     }
 }
 
 gls.left[4] = {
+    SFileName = {
+        provider = 'SFileName',
+        condition = condition.buffer_not_empty,
+        highlight = {colors.grey, colors.bg, 'bold'}
+    }
+}
+
+gls.left[5] = {
     DiffAdd = {
         provider = 'DiffAdd',
         condition = condition.hide_in_width,
@@ -89,7 +95,7 @@ gls.left[4] = {
         highlight = {colors.green, colors.bg}
     }
 }
-gls.left[5] = {
+gls.left[6] = {
     DiffModified = {
         provider = 'DiffModified',
         condition = condition.hide_in_width,
@@ -97,7 +103,7 @@ gls.left[5] = {
         highlight = {colors.blue, colors.bg}
     }
 }
-gls.left[6] = {
+gls.left[7] = {
     DiffRemove = {
         provider = 'DiffRemove',
         condition = condition.hide_in_width,
@@ -140,8 +146,8 @@ gls.right[4] = {
 gls.right[5] = {
     FileTypeName = {
         provider = 'FileTypeName',
-		separator = ' ',
-        separator_highlight = {'NONE', colors.bg},
+        separator = '  ▎ ',
+        separator_highlight = {colors.dark_grey, colors.bg},
         highlight = {colors.grey, colors.bg, 'bold'}
     }
 }
@@ -154,9 +160,9 @@ gls.right[6] = {
             if tbl[vim.bo.filetype] then return false end
             return true
         end,
-        icon = ' ',
-		separator = ' ',
-        separator_highlight = {'NONE', colors.bg},
+        icon = '  ',
+        separator = '  ▎ ',
+        separator_highlight = {colors.dark_grey, colors.bg},
         highlight = {colors.grey, colors.bg, 'bold'}
     }
 }
@@ -164,8 +170,8 @@ gls.right[6] = {
 gls.right[7] = {
     LineInfo = {
         provider = 'LineColumn',
-        separator = '  ',
-        separator_highlight = {'NONE', colors.bg},
+        separator = '  ▎ ',
+        separator_highlight = {colors.dark_grey, colors.bg},
         highlight = {colors.grey, colors.bg}
     }
 }
@@ -173,8 +179,8 @@ gls.right[7] = {
 gls.right[8] = {
     PerCent = {
         provider = 'LinePercent',
-        separator = ' ',
-        separator_highlight = {'NONE', colors.bg},
+        separator = '  ▎ ',
+        separator_highlight = {colors.dark_grey, colors.bg},
         highlight = {colors.grey, colors.bg, 'bold'}
     }
 }
@@ -182,8 +188,9 @@ gls.right[8] = {
 gls.short_line_left[1] = {
     BufferType = {
         provider = 'FileTypeName',
-        separator = ' ',
-        separator_highlight = {'NONE', colors.bg},
+        separator = ' ▎ ',
+        separator_highlight = {colors.dark_grey, colors.bg},
+        condition = condition.buffer_not_empty,
         highlight = {colors.grey, colors.bg, 'bold'}
     }
 }
