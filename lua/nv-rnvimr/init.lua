@@ -18,4 +18,12 @@ let g:rnvimr_layout = {
             \ 'row': float2nr(round(0.05 * &lines)),
             \ 'style': 'minimal'
             \ }
+vim.g.rnvimr_layout = {
+    ['relative'] = 'editor',
+    ['width'] = 'float2nr(round(0.8 * &columns))',
+    ['height'] = 'float2nr(round(0.8 * &lines))',
+    ['col'] = 'float2nr(round(0.05 * &columns))',
+    ['row'] = 'float2nr(round(0.05 * &lines))',
+    ['style'] = 'minimal'
+}
 ]]
