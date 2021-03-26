@@ -28,6 +28,7 @@ require('nv-neogit')
 require('nv-hop')
 require('nv-gitblame')
 require('nv-quickscope')
+require('nv-lazygit')
 
 -- Which Key (Hope to replace with Lua plugin someday)
 vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')

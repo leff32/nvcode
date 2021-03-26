@@ -52,6 +52,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/hop.nvim"
   },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/lazygit.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/lspkind-nvim"

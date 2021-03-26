@@ -39,7 +39,7 @@ let g:which_key_map['T'] = [':TSHighlightCapturesUnderCursor'   , 'treesitter hi
 let g:which_key_map['v'] = ['<C-W>v'                            , 'split right']
 let g:which_key_map['H'] = ['<C-W>s'                            , 'split below']
 " TODO play nice with status line
-let g:which_key_map['z'] = ['Goyo'                              , 'zen']
+let g:which_key_map['z'] = [':LazyGit'                          , 'lazygit']
 
 " Group mappings
 

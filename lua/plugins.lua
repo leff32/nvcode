@@ -67,6 +67,7 @@ return require('packer').startup(function(use)
     use 'f-person/git-blame.nvim'
     use 'tpope/vim-fugitive'
     use 'tpope/vim-rhubarb'
+    use 'kdheepak/lazygit.nvim'
 
     -- Webdev
     use 'windwp/nvim-ts-autotag'
