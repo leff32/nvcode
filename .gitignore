@@ -13,3 +13,6 @@ pack/
 utils/java/*
 lua-language-server/
 eclipse.jdt.ls/
+.language-servers/
+.debuggers/
+spell/

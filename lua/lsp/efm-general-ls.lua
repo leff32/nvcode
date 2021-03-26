@@ -15,7 +15,7 @@ local luaFormat = {
 -- JavaScript/React/TypeScript
 local prettier = {formatCommand = "./node_modules/.bin/prettier --stdin-filepath ${INPUT}", formatStdin = true}
 
-local prettier_yaml = {formatCommand = "prettier --stdin-filepath ${INPUT}", formatStdin = true}
+local prettier_global = {formatCommand = "prettier --stdin-filepath ${INPUT}", formatStdin = true}
 
 local eslint = {
     lintCommand = "./node_modules/.bin/eslint -f unix --stdin --stdin-filename ${INPUT}",
@@ -31,28 +31,21 @@ local shellcheck = {
     lintFormats = {'%f:%l:%c: %trror: %m', '%f:%l:%c: %tarning: %m', '%f:%l:%c: %tote: %m'}
 }
 
-local shfmt = {
-  formatCommand = 'shfmt -ci -s -bn',
-  formatStdin = true
-}
+local shfmt = {formatCommand = 'shfmt -ci -s -bn', formatStdin = true}
 
 local markdownlint = {
     -- TODO default to global lintrc
     -- lintcommand = 'markdownlint -s -c ./markdownlintrc',
     lintCommand = 'markdownlint -s',
     lintStdin = true,
-    lintFormats = { '%f:%l %m', '%f:%l:%c %m', '%f: %l: %m' }
+    lintFormats = {'%f:%l %m', '%f:%l:%c %m', '%f: %l: %m'}
 }
 
-local markdownPandocFormat = {
-  formatCommand = 'pandoc -f markdown -t gfm -sp --tab-stop=2',
-  formatStdin = true
-}
-
-
+local markdownPandocFormat = {formatCommand = 'pandoc -f markdown -t gfm -sp --tab-stop=2', formatStdin = true}
 
 require"lspconfig".efm.setup {
     -- init_options = {initializationOptions},
+	cmd = { DATA_PATH .. "/lspinstall/efm/efm-langserver" },
     init_options = {documentFormatting = true, codeAction = false},
     filetypes = {"lua", "python", "javascriptreact", "javascript", "sh", "html", "css", "json", "yaml", "markdown"},
     settings = {
@@ -60,15 +53,17 @@ require"lspconfig".efm.setup {
         languages = {
             lua = {luaFormat},
             python = {isort, yapf},
-            javascriptreact = {prettier, eslint},
-            javascript = {prettier, eslint},
+            -- javascriptreact = {prettier, eslint},
+            -- javascript = {prettier, eslint},
+            javascriptreact = {prettier},
+            javascript = {prettier_global},
             sh = {shellcheck, shfmt},
-            html = {prettier},
-            css = {prettier},
-            json = {prettier},
-            yaml = {prettier_yaml},
+            html = {prettier_global},
+            css = {prettier_global},
+            json = {prettier_global},
+            yaml = {prettier_global},
             -- markdown = {markdownPandocFormat, markdownlint},
-            markdown = {markdownPandocFormat},
+            markdown = {markdownPandocFormat}
         }
     }
 }
