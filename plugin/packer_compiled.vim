@@ -52,6 +52,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/hop.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+  },
   ["lazygit.nvim"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/lazygit.nvim"
@@ -183,6 +187,10 @@ _G.packer_plugins = {
   ["vim-rooter"] = {
     loaded = true,
     path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-rooter"
+  },
+  ["vim-smoothie"] = {
+    loaded = true,
+    path = "/Users/igordoinikov/.local/share/nvim/site/pack/packer/start/vim-smoothie"
   },
   ["vim-startify"] = {
     loaded = true,

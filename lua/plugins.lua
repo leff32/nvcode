@@ -44,6 +44,7 @@ return require('packer').startup(function(use)
     -- Treesitter
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use 'nvim-treesitter/nvim-treesitter-refactor'
+    use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
 
     -- Icons
     use 'kyazdani42/nvim-web-devicons'
@@ -85,5 +86,5 @@ return require('packer').startup(function(use)
     use 'liuchengxu/vim-which-key'
     use 'sheerun/vim-polyglot'
     use 'phaazon/hop.nvim'
-
+    use 'psliwka/vim-smoothie'
 end)
