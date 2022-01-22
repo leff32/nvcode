@@ -4,10 +4,15 @@
 -- _  / _  / / /  / / /____  / / /_/ // /_/ /
 -- /_/  /_/ /_//_/  \__/(_)_/  \__,_/ \__,_/
 
+-- Update January 2020
+require "user.options"
+
+
+
 -- General mappings
+-- require('settings')
 require('plugins')
 require('keymappings')
-require('settings')
 require('colorscheme')
 require('nv-utils')
 
