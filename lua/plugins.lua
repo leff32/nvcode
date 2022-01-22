@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
     use 'glepnir/lspsaga.nvim'
     use 'onsails/lspkind-nvim'
     use 'kosayoda/nvim-lightbulb'
+    use 'kabouzeid/nvim-lspinstall'
 
     -- Debugging
     use 'mfussenegger/nvim-dap'
@@ -44,7 +45,7 @@ return require('packer').startup(function(use)
     -- Treesitter
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use 'nvim-treesitter/nvim-treesitter-refactor'
-    use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
+    use {'lukas-reineke/indent-blankline.nvim'}
 
     -- Icons
     use 'kyazdani42/nvim-web-devicons'
@@ -72,7 +73,7 @@ return require('packer').startup(function(use)
 
     -- Webdev
     use 'windwp/nvim-ts-autotag'
-    use 'gennaro-tedesco/nvim-jqx'
+    -- use 'gennaro-tedesco/nvim-jqx'
 
     -- General Plugins
     use 'windwp/nvim-autopairs'
