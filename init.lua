@@ -6,13 +6,13 @@
 
 -- Update January 2020
 require "user.options"
-
+require "user.keymaps"
 
 
 -- General mappings
 -- require('settings')
+-- require('keymappings')
 require('plugins')
-require('keymappings')
 require('colorscheme')
 require('nv-utils')
 
