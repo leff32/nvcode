@@ -11,16 +11,15 @@ require "user.plugins"
 require "user.colorscheme"
 require "user.cmp"
 
--- -- General mappings
+-- General mappings
 -- require('nv-utils')
--- 
--- -- Plugins
--- require('nv-compe')
+
+-- Plugins
 -- require('nv-colorizer')
 -- require('nv-floaterm')
--- require('nv-nvimtree')
+require('nv-nvimtree')
 -- require('nv-treesitter')
--- require('nv-galaxyline')
+require('nv-galaxyline')
 -- require('nv-gitsigns')
 -- require('nv-nvim-autopairs')
 -- require('nv-startify')
@@ -34,11 +33,11 @@ require "user.cmp"
 -- require('nv-lazygit')
 -- require('nv-indentline')
 -- require('nv-lightbulb')
--- 
--- -- Which Key (Hope to replace with Lua plugin someday)
+
+-- Which Key (Hope to replace with Lua plugin someday)
 -- vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')
 -- vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
--- 
+
 -- -- LSP
 -- require('lsp')
 -- require('lsp.bash-ls')

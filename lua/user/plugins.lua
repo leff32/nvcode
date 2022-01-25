@@ -53,7 +53,7 @@ return require('packer').startup(function(use)
 --     use 'norcalli/nvim_utils'
 -- 
 --     -- Explorer
---     use 'kyazdani42/nvim-tree.lua'
+    use 'kyazdani42/nvim-tree.lua'
 -- 
 --     -- Color
 --     use 'norcalli/nvim-colorizer.lua'
@@ -83,8 +83,8 @@ return require('packer').startup(function(use)
 --     use 'kyazdani42/nvim-web-devicons'
 --     use 'ryanoasis/vim-devicons'
 -- 
---     -- Tab Line
---     use 'romgrk/barbar.nvim'
+    -- Tab Line
+    use 'romgrk/barbar.nvim'
 -- 
 --     -- Status Line
 --     use 'glepnir/galaxyline.nvim'
