@@ -45,6 +45,8 @@ return require('packer').startup(function(use)
     use "saadparwaiz1/cmp_luasnip"      -- snippet completions
     use "L3MON4D3/LuaSnip"              -- snippet engine
     use "rafamadriz/friendly-snippets"  -- a bunch of snippets to use
+    use "hrsh7th/cmp-nvim-lsp"
+    use "hrsh7th/cmp-nvim-lua"
 
 --     -- Information
 --     use 'nanotee/nvim-lua-guide'
@@ -58,8 +60,9 @@ return require('packer').startup(function(use)
 --     -- Color
 --     use 'norcalli/nvim-colorizer.lua'
 -- 
---     -- LSP
---     use 'neovim/nvim-lspconfig'
+    -- LSP
+    use "neovim/nvim-lspconfig"
+    use "williamboman/nvim-lsp-installer"
 --     use 'glepnir/lspsaga.nvim'
 --     use 'onsails/lspkind-nvim'
 --     use 'kosayoda/nvim-lightbulb'
@@ -87,7 +90,7 @@ return require('packer').startup(function(use)
     use 'romgrk/barbar.nvim'
 -- 
     -- Status Line
-    use 'glepnir/galaxyline.nvim'
+--    use 'glepnir/galaxyline.nvim'
 -- 
 --     -- Telescope
 --     use 'nvim-telescope/telescope.nvim'

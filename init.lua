@@ -10,6 +10,7 @@ require "user.keymaps"
 require "user.plugins"
 require "user.colorscheme"
 require "user.cmp"
+require "user.lsp"
 
 -- General mappings
 -- require('nv-utils')
@@ -19,7 +20,7 @@ require "user.cmp"
 -- require('nv-floaterm')
 -- require('nv-nvimtree')
 -- require('nv-treesitter')
-require('nv-galaxyline')
+-- require('nv-galaxyline')
 -- require('nv-gitsigns')
 -- require('nv-nvim-autopairs')
 -- require('nv-startify')
