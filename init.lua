@@ -9,6 +9,7 @@ require "user.options"
 require "user.keymaps"
 require "user.plugins"
 require "user.colorscheme"
+require "user.cmp"
 
 -- -- General mappings
 -- require('nv-utils')

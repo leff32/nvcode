@@ -33,14 +33,18 @@ packer.init {
 
 -- Plugins
 return require('packer').startup(function(use)
-    -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
+    use 'wbthomason/packer.nvim'   -- Packer can manage itself
+    use 'nvim-lua/popup.nvim'      -- Popup API
+    use 'nvim-lua/plenary.nvim'    -- Lua functions used in many plugins
 
-    -- Popup API
-    use 'nvim-lua/popup.nvim'
-
-    -- Lua functions used in many plugins
-    use 'nvim-lua/plenary.nvim'
+    -- cmp plugins
+    use "hrsh7th/nvim-cmp"              -- The completion plugin
+    use "hrsh7th/cmp-buffer"            -- buffer completions
+    use "hrsh7th/cmp-path"              -- path completions
+    use "hrsh7th/cmp-cmdline"           -- cmdline completions
+    use "saadparwaiz1/cmp_luasnip"      -- snippet completions
+    use "L3MON4D3/LuaSnip"              -- snippet engine
+    use "rafamadriz/friendly-snippets"  -- a bunch of snippets to use
 
 --     -- Information
 --     use 'nanotee/nvim-lua-guide'
