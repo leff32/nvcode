@@ -52,8 +52,8 @@ return require('packer').startup(function(use)
 --     -- Quality of life improvements
 --     use 'norcalli/nvim_utils'
 -- 
---     -- Explorer
-    use 'kyazdani42/nvim-tree.lua'
+    -- Explorer
+--    use 'kyazdani42/nvim-tree.lua'
 -- 
 --     -- Color
 --     use 'norcalli/nvim-colorizer.lua'
@@ -79,15 +79,15 @@ return require('packer').startup(function(use)
 --     use 'nvim-treesitter/nvim-treesitter-refactor'
 --     use {'lukas-reineke/indent-blankline.nvim'}
 -- 
---     -- Icons
---     use 'kyazdani42/nvim-web-devicons'
---     use 'ryanoasis/vim-devicons'
--- 
+    -- Icons
+    use 'kyazdani42/nvim-web-devicons'
+    use 'ryanoasis/vim-devicons'
+
     -- Tab Line
     use 'romgrk/barbar.nvim'
 -- 
---     -- Status Line
---     use 'glepnir/galaxyline.nvim'
+    -- Status Line
+    use 'glepnir/galaxyline.nvim'
 -- 
 --     -- Telescope
 --     use 'nvim-telescope/telescope.nvim'

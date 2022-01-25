@@ -17,7 +17,7 @@ require "user.cmp"
 -- Plugins
 -- require('nv-colorizer')
 -- require('nv-floaterm')
-require('nv-nvimtree')
+-- require('nv-nvimtree')
 -- require('nv-treesitter')
 require('nv-galaxyline')
 -- require('nv-gitsigns')
