@@ -33,10 +33,11 @@ packer.init {
 
 -- Plugins
 return require('packer').startup(function(use)
-    use 'wbthomason/packer.nvim'   -- Packer can manage itself
-    use 'nvim-lua/popup.nvim'      -- Popup API
-    use 'nvim-lua/plenary.nvim'    -- Lua functions used in many plugins
-    use 'windwp/nvim-autopairs'    -- Autopairs, integrates with both cmp and treesitter
+  use 'wbthomason/packer.nvim'   -- Packer can manage itself
+  use 'nvim-lua/popup.nvim'      -- Popup API
+  use 'nvim-lua/plenary.nvim'    -- Lua functions used in many plugins
+  use 'windwp/nvim-autopairs'    -- Autopairs, integrates with both cmp and treesitter
+  use "numToStr/Comment.nvim"    -- Easily comment stuff
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp"              -- The completion plugin
@@ -79,8 +80,9 @@ return require('packer').startup(function(use)
 --     use 'dsznajder/vscode-es7-javascript-react-snippets'
 
     -- Treesitter
-    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-    use 'nvim-treesitter/nvim-treesitter-refactor'
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  use 'nvim-treesitter/nvim-treesitter-refactor'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 --     use {'lukas-reineke/indent-blankline.nvim'}
 
     -- Icons
@@ -114,7 +116,6 @@ return require('packer').startup(function(use)
 --     use 'unblevable/quick-scope'
 --     use 'airblade/vim-rooter'
 --     use 'mhinz/vim-startify'
---     use 'terrortylor/nvim-comment'
 --     use 'kevinhwang91/rnvimr'
 --     use 'voldikss/vim-floaterm'
 --     use 'liuchengxu/vim-which-key'

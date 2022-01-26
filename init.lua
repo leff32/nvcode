@@ -14,6 +14,7 @@ require "user.lsp"
 require "user.telescope"
 require "user.treesitter"
 require "user.autopairs"
+require "user.comment"
 
 -- General mappings
 -- require('nv-utils')
@@ -25,7 +26,6 @@ require "user.autopairs"
 -- require('nv-galaxyline')
 -- require('nv-gitsigns')
 -- require('nv-startify')
--- require('nv-comment')
 -- require('nv-rnvimr')
 -- require('nv-neogit')
 -- require('nv-hop')
@@ -39,15 +39,3 @@ require "user.autopairs"
 -- vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')
 -- vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
 
--- -- LSP
--- require('lsp')
--- require('lsp.bash-ls')
--- require('lsp.css-ls')
--- require('lsp.efm-general-ls')
--- require('lsp.js-ts-ls')
--- require('lsp.html-ls')
--- require('lsp.json-ls')
--- require('lsp.lua-ls')
--- require('lsp.python-ls')
--- require('lsp.vim-ls')
--- require('lsp.yaml-ls')

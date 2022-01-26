@@ -15,6 +15,6 @@ configs.setup {
   },
   indent = { enable = true, disable = { "yaml" } },
   autotag = {enable = true},
-  context_commentstring = {enable = true, config = {javascriptreact = {style_element = '{/*%s*/}'}}},
+  context_commentstring = {enable = true, enable_autocmd =false, config = {javascriptreact = {style_element = '{/*%s*/}'}}},
   refactor = {highlight_definitions = {enable = true}}
 }
