@@ -12,6 +12,7 @@ require "user.colorscheme"
 require "user.cmp"
 require "user.lsp"
 require "user.telescope"
+require "user.treesitter"
 
 -- General mappings
 -- require('nv-utils')
@@ -20,7 +21,6 @@ require "user.telescope"
 -- require('nv-colorizer')
 -- require('nv-floaterm')
 -- require('nv-nvimtree')
--- require('nv-treesitter')
 -- require('nv-galaxyline')
 -- require('nv-gitsigns')
 -- require('nv-nvim-autopairs')

@@ -77,9 +77,9 @@ return require('packer').startup(function(use)
 --     use 'xabikos/vscode-javascript'
 --     use 'dsznajder/vscode-es7-javascript-react-snippets'
 
---     -- Treesitter
---     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
---     use 'nvim-treesitter/nvim-treesitter-refactor'
+    -- Treesitter
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+    use 'nvim-treesitter/nvim-treesitter-refactor'
 --     use {'lukas-reineke/indent-blankline.nvim'}
 
     -- Icons
