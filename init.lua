@@ -13,6 +13,7 @@ require "user.cmp"
 require "user.lsp"
 require "user.telescope"
 require "user.treesitter"
+require "user.autopairs"
 
 -- General mappings
 -- require('nv-utils')
@@ -23,7 +24,6 @@ require "user.treesitter"
 -- require('nv-nvimtree')
 -- require('nv-galaxyline')
 -- require('nv-gitsigns')
--- require('nv-nvim-autopairs')
 -- require('nv-startify')
 -- require('nv-comment')
 -- require('nv-rnvimr')

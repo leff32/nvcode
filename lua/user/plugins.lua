@@ -36,6 +36,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'   -- Packer can manage itself
     use 'nvim-lua/popup.nvim'      -- Popup API
     use 'nvim-lua/plenary.nvim'    -- Lua functions used in many plugins
+    use 'windwp/nvim-autopairs'    -- Autopairs, integrates with both cmp and treesitter
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp"              -- The completion plugin
@@ -109,7 +110,6 @@ return require('packer').startup(function(use)
 --     -- use 'gennaro-tedesco/nvim-jqx'
 
 --     -- General Plugins
---     use 'windwp/nvim-autopairs'
 --     use 'kevinhwang91/nvim-bqf'
 --     use 'unblevable/quick-scope'
 --     use 'airblade/vim-rooter'
