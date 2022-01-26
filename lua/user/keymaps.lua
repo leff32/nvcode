@@ -23,8 +23,8 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Explorer
-keymap("n", "<leader>e", ":Lex 30<CR>", opts)
--- keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+-- keymap("n", "<leader>e", ":Lex 30<CR>", opts)
 
 -- Ranger
 keymap("n", "<leader>r", ":RnvimrToggle<CR>", opts)

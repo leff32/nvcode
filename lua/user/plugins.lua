@@ -56,8 +56,8 @@ return require('packer').startup(function(use)
 --     -- Quality of life improvements
 --     use 'norcalli/nvim_utils'
 
-    -- Explorer
---    use 'kyazdani42/nvim-tree.lua'
+  -- Explorer
+  use 'kyazdani42/nvim-tree.lua'
 
 --     -- Color
 --     use 'norcalli/nvim-colorizer.lua'
