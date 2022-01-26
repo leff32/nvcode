@@ -15,6 +15,7 @@ require "user.telescope"
 require "user.treesitter"
 require "user.autopairs"
 require "user.comment"
+require "user.gitsigns"
 
 -- General mappings
 -- require('nv-utils')
@@ -24,7 +25,6 @@ require "user.comment"
 -- require('nv-floaterm')
 -- require('nv-nvimtree')
 -- require('nv-galaxyline')
--- require('nv-gitsigns')
 -- require('nv-startify')
 -- require('nv-rnvimr')
 -- require('nv-neogit')
@@ -38,4 +38,3 @@ require "user.comment"
 -- Which Key (Hope to replace with Lua plugin someday)
 -- vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')
 -- vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
-
