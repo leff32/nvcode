@@ -50,16 +50,16 @@ return require('packer').startup(function(use)
 
 --     -- Information
 --     use 'nanotee/nvim-lua-guide'
--- 
+
 --     -- Quality of life improvements
 --     use 'norcalli/nvim_utils'
--- 
+
     -- Explorer
 --    use 'kyazdani42/nvim-tree.lua'
--- 
+
 --     -- Color
 --     use 'norcalli/nvim-colorizer.lua'
--- 
+
     -- LSP
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
@@ -67,35 +67,35 @@ return require('packer').startup(function(use)
 --     use 'onsails/lspkind-nvim'
 --     use 'kosayoda/nvim-lightbulb'
 --     use 'kabouzeid/nvim-lspinstall'
--- 
+
 --     -- Debugging
 --     use 'mfussenegger/nvim-dap'
--- 
+
 --     -- Autocomplete
 --     use 'hrsh7th/nvim-compe'
 --     use 'hrsh7th/vim-vsnip'
 --     use 'xabikos/vscode-javascript'
 --     use 'dsznajder/vscode-es7-javascript-react-snippets'
--- 
+
 --     -- Treesitter
 --     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 --     use 'nvim-treesitter/nvim-treesitter-refactor'
 --     use {'lukas-reineke/indent-blankline.nvim'}
--- 
+
     -- Icons
     use 'kyazdani42/nvim-web-devicons'
     use 'ryanoasis/vim-devicons'
 
     -- Tab Line
     use 'romgrk/barbar.nvim'
--- 
+
     -- Status Line
 --    use 'glepnir/galaxyline.nvim'
--- 
---     -- Telescope
---     use 'nvim-telescope/telescope.nvim'
---     use 'nvim-telescope/telescope-media-files.nvim'
--- 
+
+    -- Telescope
+    use 'nvim-telescope/telescope.nvim'
+    use 'nvim-telescope/telescope-media-files.nvim'
+
 --     -- Git
 --     use 'TimUntersberger/neogit'
 --     use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
@@ -103,11 +103,11 @@ return require('packer').startup(function(use)
 --     use 'tpope/vim-fugitive'
 --     use 'tpope/vim-rhubarb'
 --     use 'kdheepak/lazygit.nvim'
--- 
+
 --     -- Webdev
 --     use 'windwp/nvim-ts-autotag'
 --     -- use 'gennaro-tedesco/nvim-jqx'
--- 
+
 --     -- General Plugins
 --     use 'windwp/nvim-autopairs'
 --     use 'kevinhwang91/nvim-bqf'

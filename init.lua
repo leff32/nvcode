@@ -11,6 +11,7 @@ require "user.plugins"
 require "user.colorscheme"
 require "user.cmp"
 require "user.lsp"
+require "user.telescope"
 
 -- General mappings
 -- require('nv-utils')
@@ -25,7 +26,6 @@ require "user.lsp"
 -- require('nv-nvim-autopairs')
 -- require('nv-startify')
 -- require('nv-comment')
--- require('nv-telescope')
 -- require('nv-rnvimr')
 -- require('nv-neogit')
 -- require('nv-hop')
