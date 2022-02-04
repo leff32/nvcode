@@ -91,6 +91,7 @@ return require('packer').startup(function(use)
 
   -- Tab Line
   use 'romgrk/barbar.nvim'
+  use 'moll/vim-bbye'
 
     -- Status Line
 --    use 'glepnir/galaxyline.nvim'

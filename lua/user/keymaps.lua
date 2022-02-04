@@ -24,11 +24,9 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Explorer
 keymap("n", "<leader>e", ":lua require'user.nvim-tree'.toggle_tree()<CR>", opts)
--- keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
--- keymap("n", "<leader>e", ":Lex 30<CR>", opts)
 
 -- Ranger
-keymap("n", "<leader>r", ":RnvimrToggle<CR>", opts)
+-- keymap("n", "<leader>r", ":RnvimrToggle<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<TAB>", ":bnext<CR>", opts)
