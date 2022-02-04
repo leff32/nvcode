@@ -89,8 +89,8 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'ryanoasis/vim-devicons'
 
-    -- Tab Line
-    use 'romgrk/barbar.nvim'
+  -- Tab Line
+  use 'romgrk/barbar.nvim'
 
     -- Status Line
 --    use 'glepnir/galaxyline.nvim'

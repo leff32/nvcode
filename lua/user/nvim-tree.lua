@@ -41,7 +41,7 @@ nvim_tree.setup {
     "dashboard",
     "alpha",
   },
-  auto_close = true,
+  auto_close = false,
   open_on_tab = false,
   hijack_cursor = false,
   update_cwd = true,
@@ -96,7 +96,7 @@ nvim_tree.setup {
   quit_on_open = 0,
   git_hl = 1,
   disable_window_picker = 0,
-  root_folder_modifier = ":t",
+  root_folder_modifier = ":~",
   show_icons = {
     git = 1,
     folders = 1,
@@ -104,3 +104,26 @@ nvim_tree.setup {
     folder_arrows = 1
   },
 }
+
+local view_status_ok, nvim_tree_view = pcall(require, "nvim-tree.view")
+if not view_status_ok then
+  return
+end
+
+local bufferline_status_ok, bufferline_state = pcall(require, "bufferline.state")
+if not bufferline_status_ok then
+  return
+end
+
+local _M = {}
+_M.toggle_tree = function()
+  if nvim_tree_view.win_open() then
+    nvim_tree.close()
+    bufferline_state.set_offset(0)
+  else
+    bufferline_state.set_offset(31)
+    nvim_tree.find_file(true)
+  end
+end
+
+return _M
