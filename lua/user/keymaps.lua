@@ -63,8 +63,8 @@ keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Comment Toggle
-keymap("n", "<leader>/", ":CommentToggle<CR>", opts)
-keymap("v", "<leader>/", ":CommentToggle<CR>", opts)
+-- keymap("n", "<leader>/", ":CommentToggle<CR>", opts)
+-- keymap("v", "<leader>/", ":CommentToggle<CR>", opts)
 
 -- OLD KEYMAPS
 -- Better nav for omnicomplete

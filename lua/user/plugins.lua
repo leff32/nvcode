@@ -85,9 +85,9 @@ return require('packer').startup(function(use)
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 --     use {'lukas-reineke/indent-blankline.nvim'}
 
-    -- Icons
-    use 'kyazdani42/nvim-web-devicons'
-    use 'ryanoasis/vim-devicons'
+  -- Icons
+  use 'kyazdani42/nvim-web-devicons'
+  use 'ryanoasis/vim-devicons'
 
     -- Tab Line
     use 'romgrk/barbar.nvim'

@@ -1,19 +1,21 @@
 vim.g.nvim_tree_icons = {
-    default = '',
-    symlink = '',
-    git = {
-        unstaged = "",
-        staged = "✓",
-        unmerged = "",
-        renamed = "➜",
-        untracked = "✗"
-    },
-    folder = {
-        default = "",
-        open = "",
-        empty = "",
-        empty_open = "",
-        symlink = ""
+  default = "",
+  symlink = "",
+  git = {
+    unstaged = "",
+    staged = "S",
+    unmerged = "",
+    renamed = "➜",
+    deleted = "",
+    untracked = "U",
+    ignored = "◌",
+  },
+  folder = {
+    default = "",
+    open = "",
+    empty = "",
+    empty_open = "",
+    symlink = "",
     }
 }
 -- TODO: git icons not showing
@@ -61,10 +63,18 @@ nvim_tree.setup {
     update_cwd = true,
     ignore_list = {},
   },
+  -- system_open = {
+  --   cmd  = nil,
+  --   args = {}
+  -- },
+  -- filters = {
+  --   dotfiles = false,
+  --   custom = {}
+  -- },
   git = {
     enable = true,
     ignore = true,
-    timeout = 50,
+    timeout = 1000,
   },
   view = {
     width = 30,
@@ -83,7 +93,7 @@ nvim_tree.setup {
     number = false,
     relativenumber = false,
   },
-  quit_on_open = 1,
+  quit_on_open = 0,
   git_hl = 1,
   disable_window_picker = 0,
   root_folder_modifier = ":t",
@@ -91,7 +101,6 @@ nvim_tree.setup {
     git = 1,
     folders = 1,
     files = 1,
-    folder_arrows = 1,
-    tree_width = 30,
+    folder_arrows = 1
   },
 }
