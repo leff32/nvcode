@@ -96,8 +96,8 @@ return require('packer').startup(function(use)
   use 'romgrk/barbar.nvim'
   use 'moll/vim-bbye'
 
-    -- Status Line
---    use 'glepnir/galaxyline.nvim'
+  -- Status Line
+  use 'glepnir/galaxyline.nvim'
 
   -- Telescope
   use 'nvim-telescope/telescope.nvim'
