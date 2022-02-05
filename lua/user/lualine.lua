@@ -14,7 +14,7 @@ local diagnostics = {
 	symbols = { error = " ", warn = " " },
 	colored = false,
 	update_in_insert = false,
-	always_visible = true,
+	always_visible = false,
 }
 
 local diff = {
@@ -22,6 +22,15 @@ local diff = {
 	colored = false,
 	symbols = { added = " ", modified = " ", removed = " " }, -- changes diff symbols
 	cond = hide_in_width,
+}
+
+local filename = {
+	"filename",
+	path = 0,
+	symbols = {
+		modified = " ",
+		readonly = " ",
+	},
 }
 
 local filetype = {
@@ -38,7 +47,7 @@ local branch = {
 
 local location = {
 	"location",
-	padding = 0,
+	padding = { left = 0, right = 1 },
 }
 
 -- cool function for progress
@@ -67,7 +76,7 @@ lualine.setup({
 	sections = {
 		lualine_a = { branch, diagnostics },
 		lualine_b = { diff },
-		lualine_c = {},
+		lualine_c = { filename },
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { spaces, "encoding", filetype },
 		lualine_y = { location },
@@ -76,7 +85,7 @@ lualine.setup({
 	inactive_sections = {
 		lualine_a = {},
 		lualine_b = {},
-		lualine_c = { "filename" },
+		lualine_c = {},
 		lualine_x = { "location" },
 		lualine_y = {},
 		lualine_z = {},
