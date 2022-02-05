@@ -70,6 +70,9 @@ return require('packer').startup(function(use)
 --     use 'kosayoda/nvim-lightbulb'
 --     use 'kabouzeid/nvim-lspinstall'
 
+  -- Formatters and linters
+  use "jose-elias-alvarez/null-ls.nvim"
+
 --     -- Debugging
 --     use 'mfussenegger/nvim-dap'
 
