@@ -21,6 +21,7 @@ require("user.nvim-tree")
 require("user.lualine")
 require("user.toggleterm")
 require("user.impatient")
+require("user.indentline")
 
 -- General mappings
 -- require('nv-utils')
