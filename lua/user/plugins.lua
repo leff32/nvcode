@@ -97,7 +97,8 @@ return require('packer').startup(function(use)
   use 'moll/vim-bbye'
 
   -- Status Line
-  use 'glepnir/galaxyline.nvim'
+  -- use 'glepnir/galaxyline.nvim'
+  use 'nvim-lualine/lualine.nvim'
 
   -- Telescope
   use 'nvim-telescope/telescope.nvim'
