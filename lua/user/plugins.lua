@@ -33,7 +33,7 @@ end
 packer.init({
 	display = {
 		open_fn = function()
-			return require("packer.util").float({ border = "rounded" })
+			return require("packer.util").float({ border = "single" })
 		end,
 	},
 })
@@ -135,6 +135,7 @@ return require("packer").startup(function(use)
 	--     use 'kevinhwang91/rnvimr'
 	--     use 'voldikss/vim-floaterm'
 	--     use 'liuchengxu/vim-which-key'
+	use("folke/which-key.nvim")
 	--     use 'sheerun/vim-polyglot'
 	--     use 'phaazon/hop.nvim'
 	--     use 'psliwka/vim-smoothie'

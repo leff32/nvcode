@@ -22,6 +22,7 @@ require("user.lualine")
 require("user.toggleterm")
 require("user.impatient")
 require("user.indentline")
+require("user.whichkey")
 
 -- General mappings
 -- require('nv-utils')

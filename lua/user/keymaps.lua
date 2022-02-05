@@ -23,10 +23,10 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Explorer
-keymap("n", "<leader>e", ":lua require'user.nvim-tree'.toggle_tree()<CR>", opts)
+-- keymap("n", "<leader>e", ":lua require'user.nvim-tree'.toggle_tree()<CR>", opts)
 
 -- Formatting
-keymap("n", "<leader>f", ":Format<CR>", opts)
+-- keymap("n", "<leader>f", ":Format<CR>", opts)
 
 -- Ranger
 -- keymap("n", "<leader>r", ":RnvimrToggle<CR>", opts)
