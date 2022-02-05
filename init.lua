@@ -19,6 +19,7 @@ require("user.comment")
 require("user.gitsigns")
 require("user.nvim-tree")
 require("user.lualine")
+require("user.toggleterm")
 
 -- General mappings
 -- require('nv-utils')
@@ -26,7 +27,6 @@ require("user.lualine")
 -- Plugins
 -- require('nv-colorizer')
 -- require('nv-floaterm')
--- require('nv-nvimtree')
 -- require('nv-startify')
 -- require('nv-rnvimr')
 -- require('nv-neogit')
