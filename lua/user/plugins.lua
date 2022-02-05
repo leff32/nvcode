@@ -127,6 +127,7 @@ return require("packer").startup(function(use)
 	--     -- use 'gennaro-tedesco/nvim-jqx'
 
 	--     -- General Plugins
+	use("lewis6991/impatient.nvim")
 	--     use 'kevinhwang91/nvim-bqf'
 	--     use 'unblevable/quick-scope'
 	--     use 'airblade/vim-rooter'

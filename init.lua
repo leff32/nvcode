@@ -20,6 +20,7 @@ require("user.gitsigns")
 require("user.nvim-tree")
 require("user.lualine")
 require("user.toggleterm")
+require("user.impatient")
 
 -- General mappings
 -- require('nv-utils')
