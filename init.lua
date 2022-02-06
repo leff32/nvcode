@@ -23,6 +23,7 @@ require("user.impatient")
 require("user.indentline")
 require("user.whichkey")
 require("user.hop")
+require("user.quickscope")
 
 -- General mappings
 -- require('nv-utils')

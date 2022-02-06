@@ -124,8 +124,8 @@ return require("packer").startup(function(use)
 
 	--     -- General Plugins
 	use("lewis6991/impatient.nvim")
+	use("unblevable/quick-scope")
 	--     use 'kevinhwang91/nvim-bqf'
-	--     use 'unblevable/quick-scope'
 	--     use 'airblade/vim-rooter'
 	--     use 'mhinz/vim-startify'
 	--     use 'kevinhwang91/rnvimr'

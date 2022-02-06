@@ -32,8 +32,8 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- keymap("n", "<leader>r", ":RnvimrToggle<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<TAB>", ":bnext<CR>", opts)
-keymap("n", "<S-TAB>", ":bprevious<CR>", opts)
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- I hate escape
 keymap("i", "jk", "<ESC>", opts)
