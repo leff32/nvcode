@@ -64,15 +64,6 @@ keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
--- Comment Toggle
--- keymap("n", "<leader>/", ":CommentToggle<CR>", opts)
--- keymap("v", "<leader>/", ":CommentToggle<CR>", opts)
-
--- OLD KEYMAPS
--- Better nav for omnicomplete
--- vim.cmd('inoremap <expr> <c-j> (\"\\<C-n>\")')
--- vim.cmd('inoremap <expr> <c-k> (\"\\<C-p>\")')
-
--- Formatting
--- keymap("n", "<leader>f", ":lua vim.lsp.buf.formatting()<CR>", opts)
--- vim.api.nvim_set_keymap("n", "<leader>f", ":lua vim.lsp.buf.formatting()<CR>", {noremap = true, silent = true})
+-- Hop
+keymap("n", "s", ":HopChar2<CR>", opts)
+keymap("n", "S", ":HopWord<CR>", opts)

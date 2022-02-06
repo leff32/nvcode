@@ -57,9 +57,6 @@ return require("packer").startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-nvim-lua")
 
-	--     -- Information
-	--     use 'nanotee/nvim-lua-guide'
-
 	--     -- Quality of life improvements
 	--     use 'norcalli/nvim_utils'
 
@@ -104,7 +101,6 @@ return require("packer").startup(function(use)
 	use("moll/vim-bbye")
 
 	-- Status Line
-	-- use 'glepnir/galaxyline.nvim'
 	use("nvim-lualine/lualine.nvim")
 
 	-- Telescope
@@ -134,10 +130,9 @@ return require("packer").startup(function(use)
 	--     use 'mhinz/vim-startify'
 	--     use 'kevinhwang91/rnvimr'
 	--     use 'voldikss/vim-floaterm'
-	--     use 'liuchengxu/vim-which-key'
 	use("folke/which-key.nvim")
 	--     use 'sheerun/vim-polyglot'
-	--     use 'phaazon/hop.nvim'
+	use("phaazon/hop.nvim")
 	--     use 'psliwka/vim-smoothie'
 
 	-- Configuration setup after cloning packer.nvim [must be at the end after plugins]

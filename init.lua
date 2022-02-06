@@ -1,11 +1,10 @@
-
 -- _____       __________ ______
 -- ___(_)_________(_)_  /____  /___  _______ _
 -- __  /__  __ \_  /_  __/__  /_  / / /  __ `/
 -- _  / _  / / /  / / /____  / / /_/ // /_/ /
 -- /_/  /_/ /_//_/  \__/(_)_/  \__,_/ \__,_/
 
--- Update January 2020
+-- Update January 2022
 require("user.options")
 require("user.keymaps")
 require("user.plugins")
@@ -23,6 +22,7 @@ require("user.toggleterm")
 require("user.impatient")
 require("user.indentline")
 require("user.whichkey")
+require("user.hop")
 
 -- General mappings
 -- require('nv-utils')
