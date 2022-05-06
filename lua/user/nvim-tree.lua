@@ -67,10 +67,10 @@ nvim_tree.setup {
   --   cmd  = nil,
   --   args = {}
   -- },
-  -- filters = {
-  --   dotfiles = false,
-  --   custom = {}
-  -- },
+  filters = {
+    dotfiles = true,
+    custom = {}
+  },
   git = {
     enable = true,
     ignore = true,

@@ -24,6 +24,7 @@ require("user.indentline")
 require("user.whichkey")
 require("user.hop")
 require("user.quickscope")
+require("user.colorizer")
 
 -- General mappings
 -- require('nv-utils')

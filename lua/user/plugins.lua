@@ -63,8 +63,8 @@ return require("packer").startup(function(use)
 	-- Explorer
 	use("kyazdani42/nvim-tree.lua")
 
-	--     -- Color
-	--     use 'norcalli/nvim-colorizer.lua'
+	-- Color
+	use("norcalli/nvim-colorizer.lua")
 
 	-- LSP
 	use("neovim/nvim-lspconfig")
