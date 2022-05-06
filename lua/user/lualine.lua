@@ -60,6 +60,11 @@ local progress = function()
 	return chars[index]
 end
 
+local my_total_lines = function()
+	local total_lines = vim.fn.line("$")
+  return total_lines
+end
+
 local spaces = function()
 	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
@@ -78,9 +83,9 @@ lualine.setup({
 		lualine_b = { diff },
 		lualine_c = { filename },
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
-		lualine_x = { spaces, "encoding", filetype },
-		lualine_y = { location },
-		lualine_z = { progress },
+		lualine_x = { "encoding", filetype },
+		lualine_y = { my_total_lines },
+		lualine_z = { progress, location },
 	},
 	inactive_sections = {
 		lualine_a = {},
