@@ -44,3 +44,11 @@ end
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]               --treat dash separated words as a word text object"
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
+
+-- Highlight selection on yank
+vim.api.nvim_create_autocmd("TextYankPost", {
+  pattern = "*",
+  callback = function()
+    vim.highlight.on_yank({ higroup = "IncSearch", timeout = "300" })
+  end,
+})
