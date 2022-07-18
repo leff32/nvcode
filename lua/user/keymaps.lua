@@ -22,14 +22,11 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Explorer
--- keymap("n", "<leader>e", ":lua require'user.nvim-tree'.toggle_tree()<CR>", opts)
-
--- Formatting
--- keymap("n", "<leader>f", ":Format<CR>", opts)
-
--- Ranger
--- keymap("n", "<leader>r", ":RnvimrToggle<CR>", opts)
+-- Resize with arrows
+keymap("n", "<S-Up>", ":resize -2<CR>", opts)
+keymap("n", "<S-Down>", ":resize +2<CR>", opts)
+keymap("n", "<S-Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<S-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":BufferNext<CR>", opts)
@@ -39,6 +36,9 @@ keymap("n", "<S-h>", ":BufferPrevious<CR>", opts)
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
 keymap("i", "jj", "<ESC>", opts)
+
+-- Highlight off
+keymap("n", "<esc><esc>", "<cmd>nohlsearch<cr>", opts)
 
 -- Visual --
 -- Indenting
@@ -67,3 +67,7 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- Hop
 keymap("n", "s", ":HopChar2<CR>", opts)
 keymap("n", "S", ":HopWord<CR>", opts)
+
+-- Comment
+keymap("n", "<TAB>", "<CMD>lua require('Comment.api').toggle_current_linewise()<CR>", opts)
+keymap("x", "<TAB>", '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>', opts)
