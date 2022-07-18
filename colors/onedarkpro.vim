@@ -213,9 +213,9 @@ hi diffOldFile guifg=#e06c75 ctermfg=168 guibg=NONE ctermbg=NONE gui=NONE cterm=
 hi debugPc guifg=NONE ctermfg=NONE guibg=#56b6c2 ctermbg=73 gui=NONE cterm=NONE
 hi debugBreakpoint guifg=#e06c75 ctermfg=168 guibg=NONE ctermbg=NONE gui=reverse cterm=reverse
 hi BufferCurrent guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
-hi BufferCurrentMod guifg=#98c379 ctermfg=114 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
+hi BufferCurrentMod guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
 hi BufferCurrentSign guifg=#50fa7b ctermfg=84 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
-hi BufferVisible guifg=#5c6370 ctermfg=241 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
+hi BufferVisible guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
 hi BufferVisibleMod guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
 hi BufferVisibleSign guifg=#61afef ctermfg=75 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
 hi BufferInactive guifg=#5c6370 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
