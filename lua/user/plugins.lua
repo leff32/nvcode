@@ -69,6 +69,7 @@ return require("packer").startup(function(use)
 	-- LSP
 	use("neovim/nvim-lspconfig")
 	use("williamboman/nvim-lsp-installer")
+  use("SmiteshP/nvim-navic")
 	--     use 'glepnir/lspsaga.nvim'
 	--     use 'onsails/lspkind-nvim'
 	--     use 'kosayoda/nvim-lightbulb'
