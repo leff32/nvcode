@@ -52,7 +52,8 @@ hi DiffChange guifg=#e5c07b ctermfg=236 guibg=NONE  ctermbg=180 gui=NONE cterm=N
 hi DiffDelete guifg=#282c34 ctermfg=236 guibg=#e06c75 ctermbg=168 gui=NONE cterm=NONE
 hi DiffText guifg=#1e1e1e ctermfg=234 guibg=#e5c07b ctermbg=180 gui=NONE cterm=NONE
 hi ErrorMsg guifg=#f44747 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi VertSplit guifg=#181a1f ctermfg=234 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi WinSeparator guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi VertSplit guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Folded guifg=#5c6370 ctermfg=241 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi FoldColumn guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi IncSearch guifg=#e5c07b ctermfg=180 guibg=#5c6370 ctermbg=241 gui=NONE cterm=NONE
@@ -214,6 +215,7 @@ hi debugPc guifg=NONE ctermfg=NONE guibg=#56b6c2 ctermbg=73 gui=NONE cterm=NONE
 hi debugBreakpoint guifg=#e06c75 ctermfg=168 guibg=NONE ctermbg=NONE gui=reverse cterm=reverse
 hi BufferCurrent guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
 hi BufferCurrentMod guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
+" hi BufferCurrentSign guifg=#dff55a ctermfg=84 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
 hi BufferCurrentSign guifg=#50fa7b ctermfg=84 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
 hi BufferVisible guifg=#abb2bf ctermfg=249 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
 hi BufferVisibleMod guifg=#e5c07b ctermfg=180 guibg=NONE ctermbg=234 gui=NONE cterm=NONE
