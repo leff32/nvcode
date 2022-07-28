@@ -151,6 +151,13 @@ local mappings = {
 			"<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
 			"Workspace Symbols",
 		},
+		D = { "<cmd>lua vim.lsp.buf.declaration()<CR>", "Declaration" },
+		d = { "<cmd>lua vim.lsp.buf.definition()<CR>", "Definition" },
+		K = { "<cmd>lua vim.lsp.buf.hover()<CR>", "Hover" },
+		m = { "<cmd>lua vim.lsp.buf.implementation()<CR>", "Implementation" },
+		R = { "<cmd>lua vim.lsp.buf.references()<CR>", "References" },
+		F = { "<cmd>lua vim.diagnostic.open_float()<CR>", "Open Float" },
+		g = { "<cmd>lua vim.lsp.buf.signature_help()<CR>", "Signature Help" },
 	},
 	s = {
 		name = "Search",
