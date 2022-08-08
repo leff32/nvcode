@@ -69,7 +69,7 @@ return require("packer").startup(function(use)
 	-- LSP
 	use("neovim/nvim-lspconfig")
 	use("williamboman/nvim-lsp-installer")
-  use("SmiteshP/nvim-navic")
+	use("SmiteshP/nvim-navic")
 	--     use 'glepnir/lspsaga.nvim'
 	--     use 'onsails/lspkind-nvim'
 	--     use 'kosayoda/nvim-lightbulb'
@@ -129,6 +129,7 @@ return require("packer").startup(function(use)
 	--     use 'kevinhwang91/nvim-bqf'
 	--     use 'airblade/vim-rooter'
 	--     use 'mhinz/vim-startify'
+  use("goolord/alpha-nvim")
 	--     use 'kevinhwang91/rnvimr'
 	--     use 'voldikss/vim-floaterm'
 	use("folke/which-key.nvim")
