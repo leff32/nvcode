@@ -4,14 +4,15 @@ if not status_ok then
 end
 
 configs.setup({
-	ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+	ensure_installed = "all",
 	sync_install = false,
-	ignore_install = { "" }, -- list of parsers to ignore installing
+	auto_install = true,
+	ignore_install = { "phpdoc" }, -- list of parsers to ignore installing
 	autopairs = { enable = true },
 	highlight = {
 		enable = true, -- false will disable the whole extension
 		disable = { "" }, -- list of language that will be disabled
-		additional_vim_regex_highlighting = true,
+		-- additional_vim_regex_highlighting = true,
 	},
 	indent = { enable = true, disable = { "yaml" } },
 	autotag = { enable = true },
@@ -20,5 +21,5 @@ configs.setup({
 		enable_autocmd = false,
 	},
 	-- context_commentstring = {enable = true, enable_autocmd =false, config = {javascriptreact = {style_element = '{/*%s*/}'}}},
-	refactor = { highlight_definitions = { enable = true } },
+	-- refactor = { highlight_definitions = { enable = true } },
 })
