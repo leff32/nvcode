@@ -31,6 +31,7 @@ require("user.functions")
 require("user.winbar")
 require("user.autocommands")
 require("user.alpha")
+require("user.neoscroll")
 -- General mappings
 -- require('nv-utils')
 

@@ -136,6 +136,7 @@ return require("packer").startup(function(use)
 	--     use 'sheerun/vim-polyglot'
 	use("phaazon/hop.nvim")
 	--     use 'psliwka/vim-smoothie'
+  use "karb94/neoscroll.nvim"
 
 	-- Configuration setup after cloning packer.nvim [must be at the end after plugins]
 	if PACKER_BOOTSTRAP then
