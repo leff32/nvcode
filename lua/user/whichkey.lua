@@ -96,6 +96,7 @@ local mappings = {
 	["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
 	["-"] = { "<cmd>split<cr>", "Split" },
 	["|"] = { "<cmd>vsplit<cr>", "Vsplit" },
+	["a"] = { "<cmd>Alpha<cr>", "Alpha" },
 	p = {
 		name = "Packer",
 		c = { "<cmd>PackerCompile<cr>", "Compile" },

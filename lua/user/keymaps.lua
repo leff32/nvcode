@@ -69,5 +69,5 @@ keymap("n", "s", ":HopChar2<CR>", opts)
 keymap("n", "S", ":HopWord<CR>", opts)
 
 -- Comment
-keymap("n", "<TAB>", "<CMD>lua require('Comment.api').toggle_current_linewise()<CR>", opts)
-keymap("x", "<TAB>", '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>', opts)
+keymap("n", "<TAB>", "<CMD>lua require('Comment.api').toggle.linewise.current()<CR>", opts)
+keymap("x", "<TAB>", '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>', opts)
